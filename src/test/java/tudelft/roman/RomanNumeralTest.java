@@ -33,4 +33,11 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberWithDoubleSubstractiveNotation(){
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("XLIX");
+        Assertions.assertEquals(49,result);
+    }
 }
