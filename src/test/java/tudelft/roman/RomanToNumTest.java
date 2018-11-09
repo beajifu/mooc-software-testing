@@ -1,6 +1,7 @@
 package tudelft.roman;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class RomanToNumTest {
@@ -23,6 +24,7 @@ public class RomanToNumTest {
     }
 
     @Test
+    @DisplayName("Teste kritischen Wert 49 (doppelte Subtraktion)")
     void criticalValue(){
         int result = RomanToNum.convert("XLIX");
         Assertions.assertEquals(49,result);

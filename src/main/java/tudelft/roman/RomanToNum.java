@@ -22,6 +22,9 @@ public class RomanToNum {
     }
 
 
+    //TODO: Add control for I,X,C are not repeated more than 3 times
+    //TODO: Add control for V,L,D are not repeated more than 1 time
+
     public static int convert(String roman){
         char[] romanSplitted = roman.toCharArray();
         int number = 0;
