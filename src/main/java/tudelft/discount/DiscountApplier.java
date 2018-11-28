@@ -12,10 +12,10 @@ public class DiscountApplier {
 
         for(Product product : dao.all()) {
             if(product.getCategory().equals("BUSINESS")) {
-                product.setPrice(product.getPrice() * 0.9);
+                product.setPrice(Math.round(product.getPrice() * 1.1 * 100)/100);
             }
             if(product.getCategory().equals("HOME")) {
-                product.setPrice(product.getPrice() * 1.1);
+                product.setPrice(Math.round(product.getPrice() * 0.9 * 100)/100);
             }
         }
 
