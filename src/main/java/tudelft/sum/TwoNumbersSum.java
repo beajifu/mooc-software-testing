@@ -23,6 +23,9 @@ class TwoNumbersSum {
                 total -= 10;
             }
             result.add(i, total);
+            if(complement==1){
+                result.add(i+1, complement);
+            }
         }
 
         Collections.reverse(result);
